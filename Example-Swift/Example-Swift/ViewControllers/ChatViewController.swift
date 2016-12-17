@@ -20,11 +20,9 @@ class ChatViewController: UIViewController {
     typealias Message = [String: String]
     
     fileprivate var messages: [Message] = []
-
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         messages = NSArray(contentsOfFile: Bundle.main.path(forResource: "YALChatDemoList", ofType: "plist")!) as! [Message]
     }
 }

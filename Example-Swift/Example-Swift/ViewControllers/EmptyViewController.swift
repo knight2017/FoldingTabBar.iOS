@@ -10,6 +10,9 @@ import UIKit
 
 class EmptyViewController: UIViewController, YALTabBarDelegate {
     
+    func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar!) {
+        
+    }
     func tabBarWillExpand(_ tabBar: YALFoldingTabBar) {
         print("will expand")
     }
