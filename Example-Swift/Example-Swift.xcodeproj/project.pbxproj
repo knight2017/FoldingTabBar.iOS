@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0B25751E04E44E007F56EC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C0B25741E04E44E007F56EC /* .gitignore */; };
 		C5B230541D74512100A625DF /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B230531D74512100A625DF /* EmptyViewController.swift */; };
 		C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B230551D7451E200A625DF /* YALChatDemoList.plist */; };
 		C5E3508E1D73FFEA0023E7F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C0B25741E04E44E007F56EC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C5B230531D74512100A625DF /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		C5B230551D7451E200A625DF /* YALChatDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YALChatDemoList.plist; sourceTree = "<group>"; };
 		C5E350801D73FFEA0023E7F7 /* Example-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 		C5E350771D73FFEA0023E7F7 = {
 			isa = PBXGroup;
 			children = (
+				5C0B25741E04E44E007F56EC /* .gitignore */,
 				C5E350821D73FFEA0023E7F7 /* Example-Swift */,
 				C5E350811D73FFEA0023E7F7 /* Products */,
 			);
@@ -373,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0B25751E04E44E007F56EC /* .gitignore in Resources */,
 				C5E350F11D7400A80023E7F7 /* Info.plist in Resources */,
 				C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */,
 				C5E350FB1D7404280023E7F7 /* Images.xcassets in Resources */,

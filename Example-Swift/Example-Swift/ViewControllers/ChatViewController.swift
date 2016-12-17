@@ -15,7 +15,33 @@ private let ChatDemeDateText = "dateText"
 
 private let reuseIdentifier = "ChatCollectionViewCell"
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, YALTabBarDelegate {
+    func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar) {
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+        print("Chat Left")
+
+    }
+    
+    func tabBarDidSelectExtraRightItem(_ tabBar: YALFoldingTabBar) {
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+        print("Chat Right")
+
+    }
     
     typealias Message = [String: String]
     

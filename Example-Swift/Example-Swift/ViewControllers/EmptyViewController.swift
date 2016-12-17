@@ -10,9 +10,28 @@ import UIKit
 
 class EmptyViewController: UIViewController, YALTabBarDelegate {
     
-    func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar!) {
-        
+    func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar) {
+        print("left")
+        print("left")
+        print("left")
+        print("left")
+        print("left")
+        print("left")
+        print("left")
+        print("left")
     }
+    
+    func tabBarDidSelectExtraRightItem(_ tabBar: YALFoldingTabBar) {
+        print("right")
+        print("right")
+        print("right")
+        print("right")
+        print("right")
+        print("right")
+
+    }
+    
+    
     func tabBarWillExpand(_ tabBar: YALFoldingTabBar) {
         print("will expand")
     }

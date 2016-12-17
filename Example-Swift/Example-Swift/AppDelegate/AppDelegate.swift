@@ -25,7 +25,7 @@ private extension AppDelegate {
     func setupYALTabBarController() {
         guard let tabBarController = window?.rootViewController as? YALFoldingTabBarController else { return }
         
-        let item1 = YALTabBarItem(itemImage: UIImage(named: "nearby_icon"), leftItemImage: nil, rightItemImage: nil)
+        let item1 = YALTabBarItem(itemImage: UIImage(named: "nearby_icon"), leftItemImage: UIImage(named: "search_icon"), rightItemImage: UIImage(named: "edit_icon"))
         let item2 = YALTabBarItem(itemImage: UIImage(named: "profile_icon"), leftItemImage: UIImage(named: "edit_icon"), rightItemImage: UIImage(named: "new_chat_icon"))
 
         
