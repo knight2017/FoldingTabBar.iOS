@@ -47,10 +47,39 @@ class ChatViewController: UIViewController, YALTabBarDelegate {
     
     fileprivate var messages: [Message] = []
     @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         messages = NSArray(contentsOfFile: Bundle.main.path(forResource: "YALChatDemoList", ofType: "plist")!) as! [Message]
-    }
+        
+//        let leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+//        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+//        leftSwipe.direction = .left
+//        rightSwipe.direction = .right
+//        view.addGestureRecognizer(leftSwipe)
+//        view.addGestureRecognizer(rightSwipe)
+//        
+//        func handleSwipes(sender:UISwipeGestureRecognizer) {
+//            if (sender.direction == .left) {
+//                print("Swipe Left")
+////                let index = self.tabBarController?.selectedIndex
+////                print(index!)
+////                print(index!)
+////                print(index!)
+////                print(index!)
+////                print(index!)
+//
+//            }
+//            if (sender.direction == .right) {
+//                print("Swipe Right")
+//                
+//            }
+//        }
+//
+   }
+    
+
+
 }
 
 extension ChatViewController: UICollectionViewDataSource {

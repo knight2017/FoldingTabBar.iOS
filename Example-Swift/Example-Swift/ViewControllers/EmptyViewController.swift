@@ -10,6 +10,36 @@ import UIKit
 
 class EmptyViewController: UIViewController, YALTabBarDelegate {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let reveal = UISwipeGestureRecognizer(target: self, action: #selector(EmptyViewController.swiped(_:)))
+        let next = UISwipeGestureRecognizer(target: self, action: #selector(EmptyViewController.swiped(_:)))
+        reveal.direction = .up
+        next.direction = .left
+
+        view.addGestureRecognizer(reveal)
+        view.addGestureRecognizer(next)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func swiped(_ sender: UISwipeGestureRecognizer) {
+        if (sender.direction == .up) {
+            print("sfdfsdf")
+            print("sfdfsdf")
+            print("sfdfsdf")
+            print("sfdfsdf")
+            print("sfdfsdf")
+            print("sfdfsdf")
+
+        }
+    
+    }
+
     func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar) {
         print("left")
         print("left")
