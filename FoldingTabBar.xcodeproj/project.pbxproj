@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4424193F1D1416AF003A197C /* YALCustomHeightTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4424193D1D1416AF003A197C /* YALCustomHeightTabBar.h */; };
 		442419401D1416AF003A197C /* YALCustomHeightTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4424193E1D1416AF003A197C /* YALCustomHeightTabBar.m */; };
+		5C7CEB591E064D5B003D42EF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C7CEB581E064D5B003D42EF /* .gitignore */; };
 		C59E27931C04719600E3BFBF /* YALSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E27731C04719600E3BFBF /* YALSpringAnimation.h */; };
 		C59E27941C04719600E3BFBF /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C59E27741C04719600E3BFBF /* YALSpringAnimation.m */; };
 		C59E27951C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = C59E27781C04719600E3BFBF /* CAAnimation+YALTabBarViewAnimations.h */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		4424193D1D1416AF003A197C /* YALCustomHeightTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALCustomHeightTabBar.h; sourceTree = "<group>"; };
 		4424193E1D1416AF003A197C /* YALCustomHeightTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALCustomHeightTabBar.m; sourceTree = "<group>"; };
+		5C7CEB581E064D5B003D42EF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C59E274C1C04708A00E3BFBF /* FoldingTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoldingTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59E27731C04719600E3BFBF /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
 		C59E27741C04719600E3BFBF /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		C59E27421C04708A00E3BFBF = {
 			isa = PBXGroup;
 			children = (
+				5C7CEB581E064D5B003D42EF /* .gitignore */,
 				C59E27701C04719600E3BFBF /* FoldingTabBar */,
 				C59E274D1C04708A00E3BFBF /* Products */,
 			);
@@ -305,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7CEB591E064D5B003D42EF /* .gitignore in Resources */,
 				C59E27A11C04719600E3BFBF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
