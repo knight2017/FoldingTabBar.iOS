@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CC97CE51E0793E400D4EEE5 /* second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC97CE41E0793E400D4EEE5 /* second.storyboard */; };
+		5CC97CE81E079A9B00D4EEE5 /* item1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC97CE71E079A9B00D4EEE5 /* item1ViewController.swift */; };
+		5CC97CEA1E079AAD00D4EEE5 /* item2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC97CE91E079AAD00D4EEE5 /* item2ViewController.swift */; };
 		5CF4856A1E064B3300331D4F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5CF485691E064B3300331D4F /* .gitignore */; };
 		C5B230541D74512100A625DF /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B230531D74512100A625DF /* EmptyViewController.swift */; };
 		C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B230551D7451E200A625DF /* YALChatDemoList.plist */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CC97CE41E0793E400D4EEE5 /* second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = second.storyboard; sourceTree = "<group>"; };
+		5CC97CE71E079A9B00D4EEE5 /* item1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item1ViewController.swift; path = ../../item1ViewController.swift; sourceTree = "<group>"; };
+		5CC97CE91E079AAD00D4EEE5 /* item2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item2ViewController.swift; sourceTree = "<group>"; };
 		5CF485691E064B3300331D4F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C5B230531D74512100A625DF /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		C5B230551D7451E200A625DF /* YALChatDemoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YALChatDemoList.plist; sourceTree = "<group>"; };
@@ -75,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC97CE61E07975E00D4EEE5 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5CC97CE71E079A9B00D4EEE5 /* item1ViewController.swift */,
+				5CC97CE91E079AAD00D4EEE5 /* item2ViewController.swift */,
+			);
+			name = scrollView;
+			path = "Example-Swift/ViewControllers";
+			sourceTree = SOURCE_ROOT;
+		};
 		C5E350771D73FFEA0023E7F7 = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +118,11 @@
 				C5E350F41D7402B00023E7F7 /* AppDelegate */,
 				C5E350C81D7400A80023E7F7 /* FoldingTabBar */,
 				C5E3508C1D73FFEA0023E7F7 /* LaunchScreen.storyboard */,
-				C5E350FC1D7404420023E7F7 /* Resources */,
-				C5E350F71D7402C20023E7F7 /* Storyboard */,
-				C5E351001D7404420023E7F7 /* View */,
 				C5E351021D7404420023E7F7 /* ViewControllers */,
+				C5E351001D7404420023E7F7 /* View */,
+				C5E350F71D7402C20023E7F7 /* Storyboard */,
+				C5E350FC1D7404420023E7F7 /* Resources */,
+				5CC97CE61E07975E00D4EEE5 /* scrollView */,
 			);
 			path = "Example-Swift";
 			sourceTree = "<group>";
@@ -276,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				C5E350F81D7402C20023E7F7 /* Main.storyboard */,
+				5CC97CE41E0793E400D4EEE5 /* second.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -377,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CF4856A1E064B3300331D4F /* .gitignore in Resources */,
+				5CC97CE51E0793E400D4EEE5 /* second.storyboard in Resources */,
 				C5E350F11D7400A80023E7F7 /* Info.plist in Resources */,
 				C5B230561D7451E200A625DF /* YALChatDemoList.plist in Resources */,
 				C5E350FB1D7404280023E7F7 /* Images.xcassets in Resources */,
@@ -403,6 +422,8 @@
 				C5E350ED1D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				C5E350EB1D7400A80023E7F7 /* YALSpringAnimation.m in Sources */,
 				C5E350F31D7400A80023E7F7 /* YALFoldingTabBar.m in Sources */,
+				5CC97CE81E079A9B00D4EEE5 /* item1ViewController.swift in Sources */,
+				5CC97CEA1E079AAD00D4EEE5 /* item2ViewController.swift in Sources */,
 				C5E350F61D7402B00023E7F7 /* AppDelegate.swift in Sources */,
 				C5E351101D741FD80023E7F7 /* ChatCollectionViewCell.swift in Sources */,
 				C5E350EC1D7400A80023E7F7 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,

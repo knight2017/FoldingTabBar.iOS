@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cRE-CT-HJj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="HaT-vm-kyC">
+            <objects>
+                <viewController id="8EM-ui-YaU" customClass="item2ViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zea-HU-fI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="AXZ-i1-HMK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pMc-ue-Nif">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="TDm-bA-r3F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdI-i6-zPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="214"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="cZF-6B-nJQ">
+            <objects>
+                <viewController id="NM0-pr-I7e" customClass="item1ViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bdx-oM-7md"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uod-SR-0sa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SDg-5e-07H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="4V9-lK-ioB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbW-ya-Pf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-441"/>
+        </scene>
+        <!--Folding Tab Bar Controller-->
+        <scene sceneID="biA-dy-72c">
+            <objects>
+                <tabBarController wantsFullScreenLayout="YES" id="cRE-CT-HJj" customClass="YALFoldingTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cun-Gj-bIh" customClass="YALCustomHeightTabBar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NM0-pr-I7e" kind="relationship" relationship="viewControllers" id="nI6-Ai-peg"/>
+                        <segue destination="8EM-ui-YaU" kind="relationship" relationship="viewControllers" id="Ksv-7c-o25"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVb-Z6-XMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="-114"/>
+        </scene>
+    </scenes>
+</document>
