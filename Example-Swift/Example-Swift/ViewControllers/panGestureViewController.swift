@@ -11,7 +11,7 @@ import UIKit
 class panGestureViewController: UIViewController {
     
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
-
+    var rightProfileView:  UIViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +29,24 @@ class panGestureViewController: UIViewController {
     }
     
     func swiped(_ sender: UIScreenEdgePanGestureRecognizer) {
-        print("hahhaha")
-        if (sender.edges == .left) {
-            let x = tabBarController?.selectedIndex
-            self.tabBarController?.selectedIndex = ( x! == 3 ? 3 : x!+1)
-        }
+        
+//        
+//        rightProfileView = EmptyViewController.v
+//        self.view.addSubview(rightProfileView)
+//        
+ 
+//        switch sender.state {
+//        case .began : break
+//            
+//        default : break
+//        }
+//        
+//        
+//        print("hahhaha")
+//        if (sender.edges == .left) {
+//            let x = tabBarController?.selectedIndex
+//            self.tabBarController?.selectedIndex = ( x! == 3 ? 3 : x!+1)
+//        }
         
     }
     

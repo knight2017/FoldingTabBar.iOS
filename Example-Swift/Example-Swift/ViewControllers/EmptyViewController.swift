@@ -12,6 +12,11 @@ class EmptyViewController: UIViewController, YALTabBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        
 
         let reveal = UISwipeGestureRecognizer(target: self, action: #selector(EmptyViewController.swiped(_:)))
         let next = UISwipeGestureRecognizer(target: self, action: #selector(EmptyViewController.swiped(_:)))
@@ -28,6 +33,9 @@ class EmptyViewController: UIViewController, YALTabBarDelegate {
     }
 
     func swiped(_ sender: UISwipeGestureRecognizer) {
+        
+        
+        
         if (sender.direction == .left) {
             let x = tabBarController?.selectedIndex
             self.tabBarController?.selectedIndex = ( x! == 3 ? 3 : x!+1)

@@ -53,7 +53,7 @@
         <!--Item 1-->
         <scene sceneID="Pph-gK-Ha4">
             <objects>
-                <viewController id="Vrl-y1-hA8" customClass="EmptyViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="item1" id="Vrl-y1-hA8" customClass="EmptyViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K7J-SZ-m1a"/>
                         <viewControllerLayoutGuide type="bottom" id="j5w-7V-X3W"/>
