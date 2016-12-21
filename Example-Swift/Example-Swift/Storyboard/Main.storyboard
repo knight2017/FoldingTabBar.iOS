@@ -21,12 +21,12 @@
         <!--Item 2-->
         <scene sceneID="ROD-OC-ORS">
             <objects>
-                <viewController id="6Dm-47-IrE" customClass="panGestureViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="item2" id="6Dm-47-IrE" customClass="panGestureViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3x6-LW-2eL"/>
                         <viewControllerLayoutGuide type="bottom" id="FXM-Iu-Dje"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NB4-vH-612">
+                    <view key="view" contentMode="scaleToFill" id="NB4-vH-612" customClass="PanGes" customModule="Example_Swift" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -188,7 +188,7 @@
         <!--Item 4-->
         <scene sceneID="DNY-h2-80A">
             <objects>
-                <viewController id="QTM-sz-MWG" customClass="EmptyViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QTM-sz-MWG" customClass="leftpanGestViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rer-T3-Pl4"/>
                         <viewControllerLayoutGuide type="bottom" id="IKd-y4-ptB"/>

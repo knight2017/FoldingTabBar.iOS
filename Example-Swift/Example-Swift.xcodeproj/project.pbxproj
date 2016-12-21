@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C3C5DC21E09F2A500EC37D0 /* panGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C5DC11E09F2A500EC37D0 /* panGestureViewController.swift */; };
+		5C74E3371E0A263C00742961 /* PanGes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74E3361E0A263C00742961 /* PanGes.swift */; };
+		5C74E33B1E0A44FD00742961 /* leftpanGestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C74E33A1E0A44FD00742961 /* leftpanGestViewController.swift */; };
 		5CC97CE51E0793E400D4EEE5 /* second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC97CE41E0793E400D4EEE5 /* second.storyboard */; };
 		5CC97CE81E079A9B00D4EEE5 /* item1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC97CE71E079A9B00D4EEE5 /* item1ViewController.swift */; };
 		5CC97CEA1E079AAD00D4EEE5 /* item2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC97CE91E079AAD00D4EEE5 /* item2ViewController.swift */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		5C3C5DC11E09F2A500EC37D0 /* panGestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = panGestureViewController.swift; sourceTree = "<group>"; };
+		5C74E3361E0A263C00742961 /* PanGes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGes.swift; sourceTree = "<group>"; };
+		5C74E33A1E0A44FD00742961 /* leftpanGestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leftpanGestViewController.swift; sourceTree = "<group>"; };
 		5CC97CE41E0793E400D4EEE5 /* second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = second.storyboard; sourceTree = "<group>"; };
 		5CC97CE71E079A9B00D4EEE5 /* item1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item1ViewController.swift; path = ../../item1ViewController.swift; sourceTree = "<group>"; };
 		5CC97CE91E079AAD00D4EEE5 /* item2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item2ViewController.swift; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				C5E3510F1D741FD80023E7F7 /* ChatCollectionViewCell.swift */,
+				5C74E3361E0A263C00742961 /* PanGes.swift */,
 			);
 			name = View;
 			path = "Example-Swift/View";
@@ -333,6 +338,7 @@
 				C5B230531D74512100A625DF /* EmptyViewController.swift */,
 				5C3C5DC11E09F2A500EC37D0 /* panGestureViewController.swift */,
 				C5E3510D1D741FC10023E7F7 /* ChatViewController.swift */,
+				5C74E33A1E0A44FD00742961 /* leftpanGestViewController.swift */,
 			);
 			name = ViewControllers;
 			path = "Example-Swift/ViewControllers";
@@ -421,6 +427,8 @@
 				C5E350EF1D7400A80023E7F7 /* YALFoldingTabBarController.m in Sources */,
 				5C3C5DC21E09F2A500EC37D0 /* panGestureViewController.swift in Sources */,
 				C5E350F21D7400A80023E7F7 /* YALCustomHeightTabBar.m in Sources */,
+				5C74E3371E0A263C00742961 /* PanGes.swift in Sources */,
+				5C74E33B1E0A44FD00742961 /* leftpanGestViewController.swift in Sources */,
 				C5E350EE1D7400A80023E7F7 /* YALAnimatingTabBarConstants.m in Sources */,
 				C5E350F01D7400A80023E7F7 /* YALTabBarItem.m in Sources */,
 				C5E350ED1D7400A80023E7F7 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
