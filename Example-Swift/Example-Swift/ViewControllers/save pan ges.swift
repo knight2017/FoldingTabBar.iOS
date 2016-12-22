@@ -8,8 +8,8 @@
 
 import UIKit
 
-class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, YALTabBarDelegate {
-
+class atpanGestViewController: UIViewController, UIGestureRecognizerDelegate, YALTabBarDelegate {
+    
     
     var PanGesture: UIPanGestureRecognizer!
     var rightProfileView:  UIView!
@@ -25,10 +25,8 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "item2") as! panGestureViewController
         rightProfileView = controller.view
-        rightProfileView.frame = CGRect(x: CGFloat(screenWidth), y: CGFloat(self.screenHeight), width: CGFloat(screenWidth), height: CGFloat(self.screenHeight))
         rightProfileView.isHidden = true
         self.view.addSubview(rightProfileView)
-
         
         centerProfileView = self.view
         screenWidth = self.view.frame.size.width;
@@ -38,8 +36,8 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
         PanGesture = UIPanGestureRecognizer(target: self, action: #selector(leftpanGestViewController.swiped(_:)))
         PanGesture.delegate = self
         view.addGestureRecognizer(PanGesture)
-
-       
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,11 +49,23 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
         var translation = gesture.translation(in: gesture.view)
         var width: CGFloat = self.view.frame.size.width
         var percent: CGFloat = max(-gesture.translation(in: self.view).x, 0) / width
-//        rightProfileView.isHidden = false
-
+        
         switch gesture.state {
             
         case .began:
+            //            if self.tabBarController?.selectedIndex == 3 && translation.x > 0 {
+            //                self.rightProfileView?.removeFromSuperview()
+            //                self.rightProfileView = nil
+            //                self.viewDidLoad()
+            //                return
+            //            }
+            //            if  translation.x > 0 {
+            ////                self.rightProfileView?.removeFromSuperview()
+            ////                self.rightProfileView = nil
+            //                self.viewDidLoad()
+            //                return
+            //            }
+            
             rightProfileView.isHidden = false
             let shadowPath = UIBezierPath(rect: self.rightProfileView.bounds)
             rightProfileView.layer.masksToBounds = false
@@ -65,22 +75,44 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
             rightProfileView.layer.shadowPath = shadowPath.cgPath
             
         case .changed:
+            //            if self.tabBarController?.selectedIndex == 3 && translation.x > 0 {
+            //                self.rightProfileView?.removeFromSuperview()
+            //                self.rightProfileView = nil
+            //                self.viewDidLoad()
+            //                return
+            //            }
+            //            if  translation.x > 0 {
+            //                self.rightProfileView?.removeFromSuperview()
+            //                self.rightProfileView = nil
+            //                self.viewDidLoad()
+            //                self.ifRight = true
+            ////                print( "change \(translation.x)")
+            //                return
+            //            }
+            
+            //            rightProfileView.isHidden = false
             rightProfileView.frame = CGRect(x: CGFloat(screenWidth + translation.x), y: CGFloat(0), width: CGFloat(screenWidth), height: CGFloat(self.screenHeight))
             rightProfileView.isUserInteractionEnabled = false
             self.view.isUserInteractionEnabled = false
             break
             
         case .ended:
+            //            if self.tabBarController?.selectedIndex == 3 && translation.x > 0 {
+            //                self.rightProfileView?.removeFromSuperview()
+            //                self.rightProfileView = nil
+            //                self.viewDidLoad()
+            //                return
+            //            }
             if  translation.x > 0 {
-//                self.rightProfileView?.removeFromSuperview()
-//                self.rightProfileView = nil
+                //                self.rightProfileView?.removeFromSuperview()
+                //                self.rightProfileView = nil
                 self.viewDidLoad()
                 print( "end if \(translation.x)")
                 
             }
-
-            if (percent > 0.5 && translation.x < 0) || ( translation.x < 0 && fabs(gesture.velocity(in: self.view).x) > 1200 ){
-                UIView.animate(withDuration: 0.6, delay: 0.0, options: [], animations: {() -> Void in
+            
+            if percent > 0.5 || fabs(gesture.velocity(in: self.view).x) > 400{
+                UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {() -> Void in
                     self.centerProfileView.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(self.screenWidth), height: CGFloat(self.screenHeight))
                     self.rightProfileView.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(self.screenWidth), height: CGFloat(self.screenHeight))
                 }, completion: {(_ completed: Bool) -> Void in
@@ -88,11 +120,8 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
                     self.rightProfileView.removeFromSuperview()
                     self.rightProfileView = nil
                     self.tabBarController?.selectedIndex = 1
-                    self.tabBarController?.selectedViewController?.viewDidLoad()
                     self.viewDidLoad()
-                     print("finished \(translation.x)")
-                    self.rightProfileView.isUserInteractionEnabled = true
-                    self.view.isUserInteractionEnabled = true
+                    print("finished \(translation.x)")
                 })
             }
             else {
@@ -105,13 +134,10 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
                     
                     self.rightProfileView.removeFromSuperview()
                     self.rightProfileView = nil
-                    
                     self.tabBarController?.selectedIndex = (self.tabBarController?.selectedIndex)!
                     self.viewDidLoad()
                     print("last \(translation.x)")
-                    self.rightProfileView.isUserInteractionEnabled = true
-                    self.view.isUserInteractionEnabled = true
-
+                    
                 })
             }
             rightProfileView.isUserInteractionEnabled = true
@@ -143,14 +169,14 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
             self.present(vc, animated: false, completion: nil)
         }
     }
-
+    
     
     func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar) {
-
+        
     }
     
     func tabBarDidSelectExtraRightItem(_ tabBar: YALFoldingTabBar) {
-
+        
         
     }
     
@@ -170,6 +196,6 @@ class leftpanGestViewController: UIViewController, UIGestureRecognizerDelegate, 
     func tabBarDidCollapse(_ tabBar: YALFoldingTabBar) {
         print("did collapse")
     }
-
-
+    
+    
 }

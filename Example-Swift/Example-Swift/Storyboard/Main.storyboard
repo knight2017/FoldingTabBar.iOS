@@ -45,6 +45,9 @@
                         <color key="backgroundColor" red="0.36862745099999999" green="0.35686274509999999" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="CtB-X1-9Wz"/>
+                    <connections>
+                        <outlet property="testButton" destination="9QB-Ey-MpN" id="omJ-KZ-r8t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTN-GS-e6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +103,7 @@
         <!--Item-->
         <scene sceneID="Ko0-UI-XYq">
             <objects>
-                <viewController id="Thd-ew-eol" sceneMemberID="viewController">
+                <viewController id="Thd-ew-eol" customClass="EmptyViewController" customModule="Example_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8AO-fz-KjW"/>
                         <viewControllerLayoutGuide type="bottom" id="Wu8-wv-6K1"/>
@@ -161,7 +164,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9B2-to-raC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1719" y="-2037"/>
+            <point key="canvasLocation" x="-1629" y="-2031"/>
         </scene>
         <!--Folding Tab Bar Controller-->
         <scene sceneID="KXc-xR-XV7">

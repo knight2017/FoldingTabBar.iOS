@@ -16,6 +16,14 @@ private let ChatDemeDateText = "dateText"
 private let reuseIdentifier = "ChatCollectionViewCell"
 
 class ChatViewController: UIViewController, YALTabBarDelegate {
+    
+    func tabBar(_ tabBar: YALFoldingTabBar, didSelectItemAt index: UInt) {
+        if index == 3 {
+            let vc = leftpanGestViewController()
+            self.present(vc, animated: false, completion: nil)
+        }
+    }
+
     func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar) {
         print("Chat Left")
         print("Chat Left")

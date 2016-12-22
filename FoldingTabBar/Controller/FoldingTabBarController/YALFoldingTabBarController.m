@@ -171,7 +171,10 @@
 }
 
 - (void)tabBar:(YALFoldingTabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index {
+    [self.viewControllers[index] viewDidLoad];
     self.selectedViewController = self.viewControllers[index];
+    [self.selectedViewController viewDidLoad];
+    printf("dsf ");
 }
 
 @end

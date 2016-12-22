@@ -8,23 +8,18 @@
 
 import UIKit
 
-class EmptyViewController: UIViewController, YALTabBarDelegate {
+class EmptyViewController: UIViewController, YALTabBarDelegate, UITabBarDelegate, UITabBarControllerDelegate {
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
-
         let reveal = UISwipeGestureRecognizer(target: self, action: #selector(EmptyViewController.swiped(_:)))
         let next = UISwipeGestureRecognizer(target: self, action: #selector(EmptyViewController.swiped(_:)))
         reveal.direction = .right
         next.direction = .left
-
         view.addGestureRecognizer(reveal)
         view.addGestureRecognizer(next)
+        self.tabBarController?.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,16 +42,31 @@ class EmptyViewController: UIViewController, YALTabBarDelegate {
         }
     
     }
+    
+    let didSelectItemAt = 1
+    let index = 1
+    
+    
+    
+    
+  func tabBar(_ tabBar: YALFoldingTabBar, didSelectItemAt index: UInt) {
+        print("sdfdf")
+        print("sdfdf")
+        print("sdfdf")
+        print("sdfdf")
+        print("sdfdf")
 
+    }
+
+    func tabBar(_ tabBar: YALFoldingTabBar, shouldSelectItemAt index: UInt) -> Bool {
+        print(index == 1)
+        return index == 1
+    }
+    
+    
     func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar) {
-        print("left")
-        print("left")
-        print("left")
-        print("left")
-        print("left")
-        print("left")
-        print("left")
-        print("left")
+
+    
     }
     
     func tabBarDidSelectExtraRightItem(_ tabBar: YALFoldingTabBar) {

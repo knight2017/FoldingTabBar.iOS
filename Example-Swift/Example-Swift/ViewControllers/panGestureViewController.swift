@@ -8,7 +8,7 @@
 
 import UIKit
 
-class panGestureViewController: UIViewController {
+class panGestureViewController: UIViewController, YALTabBarDelegate {
     
     var screenEdgeRecognizer: UIScreenEdgePanGestureRecognizer!
     var rightProfileView:  UIView!
@@ -16,6 +16,7 @@ class panGestureViewController: UIViewController {
     var screenWidth: CGFloat = 0.0
     var screenHeight: CGFloat = 0.0
     
+    @IBOutlet weak var testButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         super.didReceiveMemoryWarning()
@@ -27,7 +28,8 @@ class panGestureViewController: UIViewController {
                                                                 action: #selector(EmptyViewController.swiped(_:)))
         screenEdgeRecognizer.edges = .right
         view.addGestureRecognizer(screenEdgeRecognizer)
-        
+        self.testButton.backgroundColor = UIColor.clear
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -111,8 +113,39 @@ class panGestureViewController: UIViewController {
         
     }
     
+//    func tabBar(_ tabBar: YALFoldingTabBar, didSelectItemAt index: UInt) {
+//        if index == 3 {
+//            let vc = leftpanGestViewController()
+//            self.present(vc, animated: false, completion: nil)
+//        }
+//    }
+    
+    func tabBar(_ tabBar: YALFoldingTabBar, didSelectItemAt index: UInt) {
+                print("sdfdf")
+                print("sdfdf")
+                print("sdfdf")
+                print("sdfdf")
+                print("sdfdf")
+    }
+
+//    
+//    func tabBar(_ tabBar: YALFoldingTabBar, didSelectItemAt index: UInt) {
+//        print("sdfdf")
+//        print("sdfdf")
+//        print("sdfdf")
+//        print("sdfdf")
+//        print("sdfdf")
+//        
+//    }
+    
+    func tabBar(_ tabBar: YALFoldingTabBar, shouldSelectItemAt index: UInt) -> Bool {
+        print(index == 1)
+        return index == 1
+    }
+
+    
     @IBAction func test(_ sender: Any) {
-        
+       self.testButton.backgroundColor = UIColor.brown
         print("omg")
     }
     

@@ -33,7 +33,7 @@ private extension AppDelegate {
         tabBarController.rightBarItems = [item3, item4]
         
         tabBarController.centerButtonImage = UIImage(named:"nearby_icon")!
-        tabBarController.selectedIndex = 0
+        tabBarController.selectedIndex = 3
 
         //customize tabBarView
         tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight;
