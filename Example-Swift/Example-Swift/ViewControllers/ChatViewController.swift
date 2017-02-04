@@ -59,6 +59,7 @@ class ChatViewController: UIViewController, YALTabBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         messages = NSArray(contentsOfFile: Bundle.main.path(forResource: "YALChatDemoList", ofType: "plist")!) as! [Message]
+        messages.append(contentsOf: NSArray(contentsOfFile: Bundle.main.path(forResource: "YALChatDemoList", ofType: "plist")!) as! [Message])
         
 //        let leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
 //        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
